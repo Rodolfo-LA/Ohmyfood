@@ -1,0 +1,59 @@
+
+/* intégration des polices du site */
+
+@font-face {
+    font-family: Shrikhand-Regular;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../polices/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../polices/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../polices/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../polices/Roboto-Thin.ttf);
+}
+
+a {
+    font-family: Roboto-Regular;
+    text-decoration: none;
+    color :black;
+}
+
+h1, h6 {
+    font-family: Roboto-Regular;
+    font-weight: 900;
+    font-size: 150%;
+    text-align: center;
+}
+
+h2 {
+    font-family: Roboto-Thin;
+    font-size: 107%;
+    text-align: center;
+}
+
+h3, h4, h5, h7, button, strong {
+    font-family: Roboto-Regular;
+    font-size: 100%;
+}
+
+p {
+    font-family: Roboto-Light;
+    font-size: 100%;
+}
