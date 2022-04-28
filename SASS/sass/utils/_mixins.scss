@@ -1,0 +1,15 @@
+
+@mixin dispo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap : 20px;
+}
+
+/* mixin pour le logo coeur animé */
+
+@mixin pos_coeur {
+	position: absolute;
+	width: 22px;
+	height: 21px;
+}
