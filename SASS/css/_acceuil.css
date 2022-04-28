@@ -1,0 +1,41 @@
+/* selection fonctionnement */
+#fonct {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  padding: 54px 0px; }
+  #fonct h6 {
+    width: 89%;
+    text-align: left; }
+
+.fonct_select {
+  width: 89%;
+  height: 72px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 27px;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  box-shadow: 3px 3px 6px gainsboro; }
+  .fonct_select h5 {
+    display: block;
+    position: absolute;
+    left: 7px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    color: white;
+    background-color: #9356DC;
+    text-align: center;
+    line-height: 26px; }
+  .fonct_select img {
+    margin-left: 33px; }
+  .fonct_select h7 {
+    font-weight: 400; }
+  .fonct_select:hover {
+    background-color: #f5edff; }
