@@ -1,5 +1,15 @@
 
+/* mixin pour les headers */
+
+@mixin entete {
+    height: 64px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
 @mixin dispo {
+    position:relative;
     display: flex;
     flex-direction: column;
     align-content: center;

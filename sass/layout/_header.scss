@@ -1,0 +1,15 @@
+
+/* header menu */
+
+.head_menu {
+	@include entete;
+    column-gap: 66px;
+    padding-left: 23px;
+}
+
+/* header accueil */
+
+.head_accueil {
+	@include entete;
+    justify-content: center;
+}

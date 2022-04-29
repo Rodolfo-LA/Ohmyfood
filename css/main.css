@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* non opérationnel */
+/* mixin pour les headers */
 /* mixin pour le logo coeur animé */
+/* non opérationnel */
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -9,6 +11,15 @@
 body {
   margin: 0 auto; }
 
+@keyframes app {
+  from {
+    top: 30px; }
+  to {
+    top: 0px; }
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 /* intégration des polices du site */
 @font-face {
   font-family: Shrikhand-Regular;
@@ -35,24 +46,55 @@ a {
   text-decoration: none;
   color: black; }
 
-h1, h6 {
+/* déf. zone accueil */
+#cherche_ville h3 {
+  font-family: Roboto-Regular;
+  font-weight: 400; }
+
+#reservez h1 {
+  font-family: Roboto-Regular;
+  font-size: 150%;
+  text-align: center; }
+#reservez h2 {
+  font-family: Roboto-Thin;
+  font-weight: normal;
+  font-size: 120%;
+  text-align: center; }
+
+#fonct h6, #resto h6 {
   font-family: Roboto-Regular;
   font-weight: 900;
   font-size: 150%;
   text-align: center; }
-
-h2 {
-  font-family: Roboto-Thin;
-  font-size: 107%;
-  text-align: center; }
-
-h3, h4, h5, h7, button, strong {
+#fonct h3, #fonct h5, #fonct h7, #fonct strong, #resto h3, #resto h5, #resto h7, #resto strong {
   font-family: Roboto-Regular;
   font-size: 100%; }
-
-p {
+#fonct p, #resto p {
   font-family: Roboto-Light;
   font-size: 100%; }
+
+.pav h4 {
+  font-size: 80%; }
+
+/* déf. zone menu */
+#tete h1 {
+  font-family: Shrikhand-Regular;
+  font-size: 175%; }
+
+#menu h2 {
+  font-family: Roboto-Thin;
+  text-transform: uppercase;
+  font-size: 100%; }
+#menu h3, #menu h4, #menu strong {
+  font-family: Roboto-Regular;
+  font-size: 100%; }
+#menu p {
+  font-family: Roboto-Light;
+  font-size: 84%; }
+
+button {
+  font-family: Roboto-Regular;
+  font-weight: 500; }
 
 /* déf. bouton validation */
 button {
@@ -62,7 +104,6 @@ button {
   line-height: 50px;
   margin: 39px auto 83px auto;
   text-align: center;
-  font-weight: 500;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
@@ -85,7 +126,7 @@ button {
     width: 22px;
     height: 21px;
     z-index: 0;
-    background-color: #FF79DA;
+    background: linear-gradient(#9356DC, #FF79DA);
     clip-path: path("M11,20.865C-10.083,6.68,4.508-4.391,10.758,1.466C10.84,1.542,10.921,1.622,11,1.704c0.079-0.083,0.159-0.162,0.242-0.237C17.491-4.394,32.083,6.679,11,20.865z"); }
   .logo_coeur .fond_gris {
     position: absolute;
@@ -107,6 +148,9 @@ button {
 
 /* déf. bouton animé */
 .bouton_anim {
+  opacity: 0;
+  animation: app 0.4s ease-in;
+  animation-fill-mode: forwards;
   position: relative;
   overflow: hidden;
   width: 90%;
@@ -117,6 +161,12 @@ button {
   border-radius: 12px;
   box-shadow: 0px 0px 10px #c8c8c8;
   line-height: 133%; }
+  .bouton_anim--gap_1 {
+    animation-delay: 0.2s; }
+  .bouton_anim--gap_2 {
+    animation-delay: 0.3s; }
+  .bouton_anim--gap_3 {
+    animation-delay: 0.4s; }
   .bouton_anim .contient_logo {
     width: 70px;
     height: 70px;
@@ -164,6 +214,23 @@ button {
     right: 20px;
     transition: 0.6s; }
 
+/* header menu */
+.head_menu {
+  height: 64px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 66px;
+  padding-left: 23px; }
+
+/* header accueil */
+.head_accueil {
+  height: 64px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /* bas de page commun */
 footer {
   width: 100%;
@@ -182,13 +249,6 @@ footer {
     color: white; }
 
 /* entête de la page */
-header {
-  height: 64px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 #cache {
   width: 100%;
   overflow: hidden;
@@ -206,23 +266,11 @@ header {
   background-color: #f3f3f3;
   box-shadow: inset 0px 3px 6px gainsboro; }
 
-#cherche_ville h3 {
-  font-weight: 400; }
-
 /* reservation */
 #reservez {
   height: 287px;
   padding: 21px 0px 0px 0px;
   background-color: #f6f6f6; }
-  #reservez h1 {
-    font-family: Roboto-Regular;
-    font-weight: 900;
-    font-size: 150%;
-    text-align: center; }
-  #reservez h2 {
-    font-family: Roboto-Thin;
-    font-size: 107%;
-    text-align: center; }
 
 /* selection fonctionnement */
 #fonct {
@@ -250,8 +298,8 @@ header {
   box-shadow: 3px 3px 6px gainsboro; }
   .fonct_select h5 {
     display: block;
-    position: absolute;
-    left: 7px;
+    position: relative;
+    left: -13px;
     width: 26px;
     height: 26px;
     border-radius: 13px;
@@ -259,8 +307,6 @@ header {
     background-color: #9356DC;
     text-align: center;
     line-height: 26px; }
-  .fonct_select img {
-    margin-left: 33px; }
   .fonct_select h7 {
     font-weight: 400; }
   .fonct_select--select {
@@ -268,6 +314,7 @@ header {
 
 /* sélection restaurants */
 #resto {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -280,6 +327,7 @@ header {
     margin: auto; }
 
 .pav figure {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -291,6 +339,15 @@ header {
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0px 0px 6px grey; }
+  .pav figure h4 {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: #008766;
+    background-color: #99E2D0;
+    font-weight: 500; }
   .pav figure > img {
     width: 100%;
     border-radius: 12px 12px 0px 0px; }
@@ -301,39 +358,15 @@ header {
     display: flex;
     line-height: 145%;
     border-radius: 0px 0px 12px 12px; }
+  .pav figure .intitule {
+    width: 86.5%; }
   .pav figure h5 {
     padding-top: 20px;
     padding-left: 15px; }
   .pav figure p {
     padding-left: 15px; }
 
-.intitule {
-  width: 86.5%; }
-
-body {
-  margin: 0 auto;
-  background-color: #f6f6f6; }
-
-h1 {
-  font-family: Shrikhand-Regular;
-  font-size: 175%; }
-
-h2 {
-  text-transform: uppercase;
-  font-size: 100%; }
-
-p {
-  font-size: 84%; }
-
-/* entête de la page */
-header {
-  height: 64px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  column-gap: 66px;
-  padding-left: 23px; }
-
+/* photo & titre + logo coeur */
 #tete {
   position: relative;
   padding-bottom: 24px; }

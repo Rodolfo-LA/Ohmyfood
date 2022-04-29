@@ -8,7 +8,6 @@ button{
 	line-height: 50px;
 	margin: 39px auto 83px auto;
 	text-align: center;
-	font-weight: 500;
 	color: white;
 	background: linear-gradient($coul-secondaire,$coul-primaire);
 	border-radius: 25px;
@@ -33,7 +32,7 @@ button{
 	.fond_coeur {
 		@include pos_coeur;
 		z-index: 0;
-		background-color: $coul-secondaire;
+		background: linear-gradient($coul-primaire,$coul-secondaire);
 		clip-path: path('M11,20.865C-10.083,6.68,4.508-4.391,10.758,1.466C10.84,1.542,10.921,1.622,11,1.704c0.079-0.083,0.159-0.162,0.242-0.237C17.491-4.394,32.083,6.679,11,20.865z');
 	}
 	.fond_gris {
@@ -58,6 +57,9 @@ button{
 /* déf. bouton animé */
 
 .bouton_anim {
+	opacity: 0;
+	animation: app 0.4s ease-in;
+	animation-fill-mode: forwards;
 	position: relative;
 	overflow: hidden;
 	width: 90%;
@@ -68,6 +70,15 @@ button{
 	border-radius: 12px;
 	box-shadow: 0px 0px 10px rgb(200, 200, 200);
 	line-height: 133%;
+	&--gap_1 {
+		animation-delay: 0.2s;
+	}
+	&--gap_2 {
+		animation-delay: 0.3s;
+	}
+	&--gap_3 {
+		animation-delay: 0.4s;
+	}
 	.contient_logo {
 		width: 70px;
 		height: 70px;

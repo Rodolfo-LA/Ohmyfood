@@ -1,44 +1,5 @@
 
 
-/* intégration des polices du site */
-
-@font-face {
-    font-family: Shrikhand-Regular;
-    font-weight: normal;
-    font-style: normal;
-    src: url(../polices/Shrikhand-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Regular;
-    font-weight: normal;
-    font-style: normal;
-    src: url(../polices/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Light;
-    font-weight: normal;
-    font-style: normal;
-    src: url(../polices/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Thin;
-    font-weight: normal;
-    font-style: normal;
-    src: url(../polices/Roboto-Thin.ttf);
-}
-
-
-/* intégration de la propriété BOX-SIZING */
-
-* {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-}
-
 body {
     margin: 0 auto;
     background-color: rgb(246, 246, 246);
@@ -254,29 +215,3 @@ h4:hover {
     transition: 0.3s;
 }
 
-/* bas de page */
-
-footer {
-    width: 100%;
-    background-color: rgb(53, 53, 53);
-    padding: 25px 5% 40px 5%;
-    text-decoration: none;
-    line-height: 200%;
-}
-
-footer div img{
-    position: relative;
-    margin-right: 6px;
-}
-
-footer li {
-    list-style: none;
-}
-
-footer>img {
-    height: 18px;
-}
-
-footer a {
-    color: white;
-}

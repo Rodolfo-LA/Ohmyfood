@@ -1,32 +1,5 @@
-body {
-    margin: 0 auto;
-    background-color: rgb(246, 246, 246);
-}
 
-h1 {
-    font-family: Shrikhand-Regular;
-    font-size: 175%;
-}
-
-h2 {
-    text-transform: uppercase;
-    font-size: 100%;
-}
-
-p {
-    font-size: 84%;
-}
-
-/* entête de la page */
-
-header {
-    height: 64px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    column-gap: 66px;
-    padding-left: 23px;
-}
+/* photo & titre + logo coeur */
 
 #tete {
     position: relative;
@@ -46,8 +19,6 @@ header {
         margin: 0%;
     }
 }
-
-
 
 /* menu ENTREE / PLAT / DESSERT */
 
