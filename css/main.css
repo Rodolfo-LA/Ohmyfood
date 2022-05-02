@@ -1,5 +1,9 @@
 @charset "UTF-8";
+/* couleur de base du site */
+/* couleur de fond des pages */
+/* valeur pour le breakpoint tablette/destop */
 /* non opérationnel */
+/* mixin pour le responsive */
 /* mixin pour les headers */
 /* mixin pour le logo coeur animé */
 /* non opérationnel */
@@ -515,10 +519,36 @@ footer a {
   padding: 60px 0px;
 }
 
+@media screen and (min-width: 768px) {
+  #resto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 #resto h6 {
   width: 89%;
   text-align: left;
   margin: auto;
+}
+
+.pav {
+  width: 89%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .pav {
+    width: 46%;
+    margin: 0 0;
+  }
 }
 
 .pav figure {
@@ -533,7 +563,6 @@ footer a {
   -ms-flex-line-pack: center;
       align-content: center;
   row-gap: 20px;
-  width: 89%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -588,7 +617,6 @@ footer a {
 }
 
 .pav figure:hover {
-  /* effets de luminosité accrue */
   -webkit-filter: brightness(1.06);
           filter: brightness(1.06);
   -webkit-box-shadow: 0px 0px 10px #858585;
