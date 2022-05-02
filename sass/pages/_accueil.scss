@@ -130,4 +130,8 @@
 	& p {
 		padding-left: 15px;
 	}
+	&:hover {
+		filter: brightness(1.06);
+		box-shadow: 0px 0px 10px rgb(133, 133, 133);
+	}
 }
