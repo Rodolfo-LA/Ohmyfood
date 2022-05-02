@@ -164,6 +164,10 @@ button {
 }
 
 button:hover {
+  -webkit-filter: brightness(1.06);
+          filter: brightness(1.06);
+  -webkit-box-shadow: 0px 0px 10px #858585;
+          box-shadow: 0px 0px 10px #858585;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
   -webkit-transition: 0.3s;
