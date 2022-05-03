@@ -294,6 +294,11 @@ footer {
   align-items: center;
   row-gap: 25px;
   padding: 54px 0px; }
+  @media screen and (min-width: 768px) {
+    #fonct {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
   #fonct h6 {
     width: 89%;
     text-align: left; }
@@ -308,6 +313,11 @@ footer {
   border-radius: 16px;
   background-color: #f6f6f6;
   box-shadow: 3px 3px 6px gainsboro; }
+  @media screen and (min-width: 768px) {
+    .fonct_select {
+      width: 30%;
+      margin: 0 0;
+      column-gap: 7px; } }
   .fonct_select h5 {
     display: block;
     position: relative;

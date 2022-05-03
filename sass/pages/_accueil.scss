@@ -47,6 +47,11 @@
 	align-items: center;
 	row-gap : 25px;
 	padding: 54px 0px;
+	@include tab_desk {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
 	& h6 {
 		width: 89%;
 		text-align: left;
@@ -56,6 +61,11 @@
 
 .fonct_select {
 	width: 89%;
+	@include tab_desk {
+		width: 30%;
+		margin: 0 0;
+		column-gap: 7px;
+	}
 	height: 72px;
 	display: flex;
 	justify-content: left;
