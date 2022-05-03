@@ -26,6 +26,14 @@
 	height: 287px;
 	padding: 21px 0px 0px 0px;
 	background-color: rgb(246, 246, 246);
+	@include tab_desk {
+		height: 238px;
+	}
+	& br {
+		@include tab_desk {
+			display: none;
+		}
+	}
 }
 
 /* selection fonctionnement */
