@@ -422,8 +422,15 @@ footer {
 /* menu ENTREE / PLAT / DESSERT */
 #menu {
   position: relative; }
+  @media screen and (min-width: 768px) {
+    #menu {
+      display: flex;
+      flex-wrap: wrap; } }
   #menu h2 {
-    width: 11%;
+    width: 44px;
     padding-top: 24px;
     margin-left: 7%;
     border-bottom: 3px solid green; }
+  @media screen and (min-width: 768px) {
+    #menu .sous_menu {
+      width: 50%; } }
