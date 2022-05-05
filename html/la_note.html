@@ -14,15 +14,18 @@
 
     <!-- entête de la page logo / photo / titre A la .. -->
 
-     <header class="head_menu">
+    <header class="head_menu">
         <a href="../index.html">
-         <img src="../images/logos/arrow-left-short.svg" alt="logo flèche" height="18">           
+            <img src="../images/logos/arrow-left-short.svg" alt="logo flèche" height="18">           
         </a>
         <img src="../images/logos/ohmyfood.svg" alt="logo ohmyfood" height="29">
-     </header>
+    </header>
 
-     <section id="tete">
-        <img src="../images/menus/la_note.jpg" alt="menu à la française">
+    <section id="tete">
+        <picture>
+            <source media="(min-width:376px)" srcset="../images/menus/la_note_tab.jpg">
+            <img src="../images/menus/la_note.jpg" alt="menu la_note">
+        </picture>
         <div>
             <h1>La note enchantée</h1>
             <div class="logo_coeur logo_coeur--menu">
