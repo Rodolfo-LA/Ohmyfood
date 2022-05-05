@@ -7,15 +7,26 @@ footer {
     padding: 25px 5% 40px 5%;
     text-decoration: none;
     line-height: 200%;
-    & div img{
-        position: relative;
-        margin-right: 6px;
+    & ul {
+        @include tab_desk {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 11px;
+        }
     }
     & li {
         list-style: none;
     }
+    & li img {
+        position: relative;
+        margin-right: 6px;
+    }
     &>img {
         height: 18px;
+        @include tab_desk {
+            display: block;
+            margin: 0 auto;
+        }
     }
     & a {
         color: white;
