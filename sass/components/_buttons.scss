@@ -24,12 +24,10 @@ button{
 /* déf. bouton logo coeur animé */
 
 .logo_coeur {
-	position: relative;
-	left: 0px;
-	top: 23px;
+	position: absolute;
+	top: 47px;
 	&--menu {
-		left: 286px;
-		top: -48px;
+		right: 62px;
 	}
 	.fond_coeur {
 		@include pos_coeur;

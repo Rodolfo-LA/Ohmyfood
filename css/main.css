@@ -121,12 +121,10 @@ button {
 
 /* déf. bouton logo coeur animé */
 .logo_coeur {
-  position: relative;
-  left: 0px;
-  top: 23px; }
+  position: absolute;
+  top: 47px; }
   .logo_coeur--menu {
-    left: 286px;
-    top: -48px; }
+    right: 62px; }
   .logo_coeur .fond_coeur {
     position: absolute;
     width: 22px;
