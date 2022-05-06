@@ -64,13 +64,15 @@ a {
         font-size: 150%;
         text-align: center;
     }
-    & h3, h5, h7, strong {
+    & h3, h5, p {
         font-family: Roboto-Regular;
         font-size: 100%;
     }
-    p {
+}
+
+#resto {
+    & p {
         font-family: Roboto-Light;
-        font-size: 100%;
     }
 }
 
