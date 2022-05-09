@@ -8,7 +8,7 @@ footer {
     text-decoration: none;
     line-height: 200%;
     & ul {
-        @include tab_desk {
+        @include tab_desk($tab-desktop) {
             display: flex;
             justify-content: space-between;
             margin-top: 11px;
@@ -23,7 +23,7 @@ footer {
     }
     &>img {
         height: 18px;
-        @include tab_desk {
+        @include tab_desk($tab-desktop) {
             display: block;
             margin: 0 auto;
         }

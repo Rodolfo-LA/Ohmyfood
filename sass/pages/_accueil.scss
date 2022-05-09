@@ -103,11 +103,11 @@
 	height: 287px;
 	padding: 21px 0px 0px 0px;
 	background-color: rgb(246, 246, 246);
-	@include tab_desk {
+	@include tab_desk($tab-desktop) {
 		height: 238px;
 	}
 	& br {
-		@include tab_desk {
+		@include tab_desk($tab-desktop) {
 			display: none;
 		}
 	}
@@ -124,7 +124,7 @@
 	align-items: center;
 	row-gap : 25px;
 	padding: 54px 0px;
-	@include tab_desk {
+	@include tab_desk($tab-desktop) {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
@@ -138,7 +138,7 @@
 
 .fonct_select {
 	width: 89%;
-	@include tab_desk {
+	@include tab_desk($tab-desktop) {
 		width: 30%;
 		margin: 0 0;
 		column-gap: 7px;
@@ -175,7 +175,7 @@
 
 #resto {
 	@include dispo;
-	@include tab_desk {
+	@include tab_desk($tab-desktop) {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
@@ -192,7 +192,7 @@
 .pav {
 	width: 89%;
 	margin: 0 auto;
-	@include tab_desk {
+	@include tab_desk($tab-desktop) {
 		width: 46%;
 		margin: 0 0;
 	}

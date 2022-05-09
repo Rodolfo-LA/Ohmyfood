@@ -24,9 +24,12 @@
 /* menu ENTREE / PLAT / DESSERT */
 
 #menu {
-    @include tab_desk {
+    @include tab_desk($tab-desktop) {
         display: flex;
         flex-wrap: wrap;
+    }
+    @include tab_desk($desktop) {
+        justify-content: space-between;
     }
     position: relative;
     & h2 {
@@ -36,8 +39,11 @@
         border-bottom: 3px solid green;
     }
     & .sous_menu {
-        @include tab_desk {
+        @include tab_desk($tab-desktop) {
             width: 50%;
+        }
+        @include tab_desk($desktop) {
+            width: 33%;
         }
     }
 }

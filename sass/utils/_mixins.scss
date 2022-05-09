@@ -1,8 +1,8 @@
 
 /* mixin pour le responsive */
 
-@mixin tab_desk {
-    @media screen and (min-width: $tab-desktop) {
+@mixin tab_desk($larg_ecran) {
+    @media screen and (min-width: $larg_ecran) {
         @content;
     }
 }
