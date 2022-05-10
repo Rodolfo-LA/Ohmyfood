@@ -278,7 +278,7 @@ footer {
   height: 100%;
   background-color: white;
   z-index: 100;
-  animation: disparu 3s linear;
+  animation: disparu 4.66s linear;
   animation-fill-mode: forwards; }
   .fond_loader .spin_loader {
     margin: 0 auto;
@@ -324,7 +324,7 @@ footer {
 @keyframes disparu {
   0% {
     opacity: 1; }
-  25% {
+  40% {
     opacity: 1; }
   100% {
     opacity: 0;
