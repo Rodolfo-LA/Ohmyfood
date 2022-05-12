@@ -64,10 +64,7 @@
 }
 
 @keyframes disparu{
-	0% {
-		opacity: 1;
-	}
-	40% {
+	0%,40% {
 		opacity: 1;
 	}
 	100% {
@@ -102,7 +99,7 @@
 #reservez {
 	height: 287px;
 	padding: 21px 0px 0px 0px;
-	background-color: rgb(246, 246, 246);
+	background-color: $fond-menu;
 	@include tab_desk($tab-desktop) {
 		height: 238px;
 	}
@@ -149,7 +146,7 @@
 	align-items: center;
 	column-gap: 27px;
 	border-radius: 16px;
-	background-color: rgb(246, 246, 246);
+	background-color: $fond-menu;
 	box-shadow: 3px 3px 6px rgb(220, 220, 220);
 	& h5 {
 		display: block;
@@ -180,7 +177,7 @@
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 	}
-	background-color: rgb(246, 246, 246);
+	background-color: $fond-menu;
 	padding: 60px 0px;
 	& h6 {
 		width: 89%;

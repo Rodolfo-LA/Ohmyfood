@@ -322,9 +322,7 @@ footer {
     border-top-color: #FF79DA;
     border-bottom-color: #FF79DA; } }
 @keyframes disparu {
-  0% {
-    opacity: 1; }
-  40% {
+  0%,40% {
     opacity: 1; }
   100% {
     opacity: 0;
