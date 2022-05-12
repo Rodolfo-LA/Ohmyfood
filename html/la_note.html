@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style_menus.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Ohmyfood - menu - La note enchantée</title>
 </head>
 
@@ -14,121 +14,130 @@
 
     <!-- entête de la page logo / photo / titre A la .. -->
 
-     <header>
+    <header class="head_menu">
         <a href="../index.html">
-         <img src="../images/logos/arrow-left-short.svg" alt="logo flèche" height="18">           
+            <img src="../images/logos/arrow-left-short.svg" alt="logo flèche" height="18">           
         </a>
         <img src="../images/logos/ohmyfood.svg" alt="logo ohmyfood" height="29">
-     </header>
+        <p>*</p>
+    </header>
 
-     <section id="tete">
-        <img src="../images/menus/la_note.jpg" alt="menu à la française">
+    <section id="tete">
+        <picture>
+            <source media="(min-width:376px)" srcset="../images/menus/la_note_tab.jpg">
+            <img src="../images/menus/la_note.jpg" alt="menu la_note">
+        </picture>
         <div>
             <h1>La note enchantée</h1>
-            <a href="#">
-                <div id="fond_coeur"></div>
-                <div id="fond_gris"></div>
-                <img id="coucou" src="../images/logos/heart.svg" alt="logo coeur" width="22" height="21">
-           </a>
+            <div class="logo_coeur logo_coeur--menu">
+                <div class="fond_coeur"></div>
+                <div class="fond_gris fond_gris--gris"></div>
+                <img class="coucou" src="../images/logos/heart.svg" alt="logo coeur">
+            </div>
         </div>
     </section>
 
     <!--  entrée / plats / dessert .. -->
 
     <section id="menu"> 
-        <h2>Entrées</h2>
-        <div>     
-            <h3>Ravioles de foie gras</h3>
-            <p>Accompagnés de leur crème à la truffe<strong> 25€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+        <div class="sous_menu">
+            <h2>Entrées</h2>
+            <div class="bouton_anim">     
+                <h3>Ravioles de foie gras</h3>
+                <p>Accompagnés de leur crème à la truffe<strong> 25€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_1">     
+                <h3>Caviar osciètre</h3>
+                <p>Sur blini à la farine de blé noir<strong> 35€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_2">     
+                <h3>Homard et espuma de potiron</h3>
+                <p>Mariné aux zestes d'orange<strong> 20€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_3">     
+                <h3>Foie gras de canard cuit entier</h3>
+                <p>Confiture de figue et pain toasté<strong> 35€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
             </div>
         </div>
-        <div>     
-            <h3>Caviar osciètre</h3>
-            <p>Sur blini à la farine de blé noir<strong> 35€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+        <div class="sous_menu">
+            <h2>Plats</h2>
+            <div class="bouton_anim">     
+                <h3>Noix de coquilles Saint-Jacques</h3>
+                <p>Sur lit de purée de céleri-rave<strong> 40€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_1">     
+                <h3>Langoustine poêlée</h3>
+                <p>Purée de patate douce<strong> 35€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_2">     
+                <h3>Mijoté de queue de bœuf</h3>
+                <p>Et riz sauvage aux zestes de citron<strong> 44€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
             </div>
         </div>
-        <div>     
-            <h3>Homard et espuma de potiron</h3>
-            <p>Mariné aux zestes d'orange<strong> 20€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+        <div class="sous_menu">
+            <h2>Desserts</h2>
+            <div class="bouton_anim">     
+                <h3>Macaron noisette et chocolat</h3>
+                <p>Glace au caramel brun et sel de Guérande<strong> 18€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_1">     
+                <h3>Baba au rhum revisité</h3>
+                <p>Avec son coulis de citron<strong> 22€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
+            </div>
+            <div class="bouton_anim bouton_anim--gap_2">     
+                <h3>Tarte au citron meringuée</h3>
+                <p>Déstructurée<strong> 23€</strong></p>
+                <div class="contient_logo">      
+                    <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
+                </div>
             </div>
         </div>
-        <div>     
-            <h3>Foie gras de canard cuit entier</h3>
-            <p>Confiture de figue et pain toasté<strong> 35€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-
-        <h2>Plats</h2>
-        <div>     
-            <h3>Noix de coquilles Saint-Jacques</h3>
-            <p>Sur lit de purée de céleri-rave<strong> 40€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-        <div>     
-            <h3>Langoustine poêlée</h3>
-            <p>Purée de patate douce<strong> 35€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-        <div>     
-            <h3>Mijoté de queue de boeuf</h3>
-            <p>Et riz sauvage aux zestes de citron<strong> 44€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-
-        <h2>Desserts</h2>
-        <div>     
-            <h3>Macaron noisette et chocolat</h3>
-            <p>Glace au caramel brun et sel de Guérande<strong> 18€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-        <div>     
-            <h3>Baba au rhum revisité</h3>
-            <p>Avec son coulis de citron<strong> 22€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-        <div>     
-            <h3>Tarte au citron meringuée</h3>
-            <p>Déstructurée<strong> 23€</strong></p>
-            <div class="contient_logo">      
-                <img src="../images/logos/check-circle-fill.svg" alt="logo check" height="24">
-            </div>
-        </div>
-        <h4>Commander</h4>
     </section>
+
+    <button>Commander</button>
 
     <!-- Definition du pied de page -->
 
     <footer>
         <img src="../images/logos/ohmyfood_blanc.svg" alt="logo ohmyfood">
-        <div>
-            <img src="../images/logos/utensils-solid.svg" alt="logo couverts" height="12">
-            <a href="#">Proposer un restaurant</a>
-        </div>
-        <div>
-            <img src="../images/logos/hands-helping-solid.svg" alt="logo poignée de mains" width="11" height="12">
-            <a href="#">Devenir partenaire</a>
-        </div>
         <ul>
+            <li>
+                <img src="../images/logos/utensils-solid.svg" alt="logo couverts" height="12">
+                <a href="#">Proposer un restaurant</a>
+            </li>
+            <li>
+                <img src="../images/logos/hands-helping-solid.svg" alt="logo poignée de mains" width="11" height="12">
+                <a href="#">Devenir partenaire</a>
+            </li>
             <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
 </body>

@@ -1,0 +1,20 @@
+
+/* header menu */
+
+.head_menu {
+	@include entete;
+    & a {
+        padding-left: 23px;
+    }
+    & p {
+        width: 43.6px;
+        color: white;
+    }
+}
+
+/* header accueil */
+
+.head_accueil {
+	@include entete;
+    justify-content: center;
+}

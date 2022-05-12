@@ -1,0 +1,241 @@
+
+/* Propriétés du spin loader */
+
+.fond_loader {
+	opacity: 1;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 100;
+	animation: disparu 4.66s linear;
+	animation-fill-mode:forwards;
+	& .spin_loader {
+		margin: 0 auto;
+		top: 359px;
+		position: relative;
+		z-index: 100;
+		width: 100px;
+		height: 100px;
+		border-radius: 109px;
+		border: 9px solid $coul-primaire;
+		border-left-color: white;
+		border-right-color: white ;
+		animation: tourne 2.33s linear;
+		animation-fill-mode:forwards;
+	}
+	& .spin_loader::after {
+		content: "";
+		position: absolute;
+		margin: auto;
+		width: 78%;
+		height: 78%;
+		border: 9px solid $coul-secondaire;
+		border-top-color: white;
+		border-bottom-color: white ;
+		border-radius: 109px;
+		animation: tourne_inv 2.33s linear;
+		animation-fill-mode:forwards;
+	}
+}
+
+/* animations pour le spin loader */
+
+@keyframes tourne {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(720deg); 
+		border-left-color: $coul-primaire;
+		border-right-color: $coul-primaire;
+	}
+}
+
+@keyframes tourne_inv {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(-1440deg);
+		border-top-color: $coul-secondaire;
+		border-bottom-color: $coul-secondaire;
+	} 
+}
+
+@keyframes disparu{
+	0%,40% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		z-index: -100;
+	} 
+}
+
+/* entête de la page */
+
+#cache {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#cherche_ville {
+    height: 55px;
+    width: 120%;
+    margin-left: -10%;
+    margin-bottom: -5px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    box-shadow: inset 0px 3px 6px rgb(220, 220, 220);
+}
+
+/* reservation */
+
+#reservez {
+	height: 287px;
+	padding: 21px 0px 0px 0px;
+	background-color: $fond-menu;
+	@include tab_desk($tab-desktop) {
+		height: 238px;
+	}
+	& br {
+		@include tab_desk($tab-desktop) {
+			display: none;
+		}
+	}
+}
+
+/* descriptif fonctionnement */
+
+#fonct {
+	position: relative;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap : 25px;
+	padding: 54px 0px;
+	@include tab_desk($tab-desktop) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	& h6 {
+		width: 89%;
+		text-align: left;
+	}
+
+}
+
+.fonct_select {
+	width: 89%;
+	@include tab_desk($tab-desktop) {
+		width: 30%;
+		margin: 0 0;
+		column-gap: 7px;
+	}
+	height: 72px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	column-gap: 27px;
+	border-radius: 16px;
+	background-color: $fond-menu;
+	box-shadow: 3px 3px 6px rgb(220, 220, 220);
+	& h5 {
+		display: block;
+		position: relative;
+		left: -13px;
+		width: 26px;
+		height: 26px;
+		border-radius: 13px;
+		color: white;
+		background-color: $coul-primaire;
+		text-align: center;
+		line-height: 26px;
+	}
+	& p {
+		font-weight: 400;
+	}
+	&--select {
+		background-color: rgb(245, 237, 255);
+	}
+}
+
+/* sélection restaurants */
+
+#resto {
+	@include dispo;
+	@include tab_desk($tab-desktop) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	background-color: $fond-menu;
+	padding: 60px 0px;
+	& h6 {
+		width: 89%;
+		text-align: left;
+		margin: auto;
+	}
+}
+
+.pav {
+	width: 89%;
+	margin: 0 auto;
+	@include tab_desk($tab-desktop) {
+		width: 46%;
+		margin: 0 0;
+	}
+	& figure {
+		@include dispo;
+		justify-content: center;
+		align-items: center;
+		row-gap : 0px;
+		margin: 0 auto;
+		border-radius: 12px;
+		box-shadow: 0px 0px 6px grey;
+		& h4 {
+			position:absolute;
+			right: 14px;
+			top: 14px;
+			padding: 8px 15px;
+			border-radius:6px;
+			color: #008766;
+			background-color:$coul-tertiaire;
+			font-weight: 500;
+		}
+		&>img {
+			width: 100%;
+			border-radius: 12px 12px 0px 0px;
+		}
+		& figcaption {
+			width: 100%;
+			height: 78px;
+			background-color: white;
+			display: flex;
+			line-height: 145%;
+			border-radius: 0px 0px 12px 12px;
+		}
+		& .intitule {
+			width: 86.5%;
+		}
+		& h5 {
+			padding-top: 20px;
+			padding-left: 15px;
+		}
+		& p {
+			padding-left: 15px;
+		}
+		&:hover {
+			filter: brightness(1.06);
+			box-shadow: 0px 0px 10px rgb(133, 133, 133);
+		}
+	}
+}

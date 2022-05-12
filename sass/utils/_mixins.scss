@@ -1,0 +1,34 @@
+
+/* mixin pour le responsive */
+
+@mixin tab_desk($larg_ecran) {
+    @media screen and (min-width: $larg_ecran) {
+        @content;
+    }
+}
+
+/* mixin pour les headers */
+
+@mixin entete {
+    height: 64px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin dispo {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap : 20px;
+}
+
+/* mixin pour le logo coeur animé */
+
+@mixin pos_coeur {
+	position: absolute;
+	width: 22px;
+	height: 21px;
+}

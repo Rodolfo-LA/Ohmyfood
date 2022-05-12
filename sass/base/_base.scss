@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+@keyframes app {
+    from {top:30px;} to {top:0px;}
+    from {opacity: 0;} to {opacity: 1;}
+}

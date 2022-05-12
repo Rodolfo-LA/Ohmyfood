@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* intégration des polices du site */
+@font-face {
+  font-family: Shrikhand-Regular;
+  font-weight: normal;
+  font-style: normal;
+  src: url(../polices/Shrikhand-Regular.ttf); }
+@font-face {
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-style: normal;
+  src: url(../polices/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Roboto-Light;
+  font-weight: normal;
+  font-style: normal;
+  src: url(../polices/Roboto-Light.ttf); }
+@font-face {
+  font-family: Roboto-Thin;
+  font-weight: normal;
+  font-style: normal;
+  src: url(../polices/Roboto-Thin.ttf); }
+a {
+  font-family: Roboto-Regular;
+  text-decoration: none;
+  color: black; }
+
+/* déf. zone accueil */
+#cherche_ville h3 {
+  font-family: Roboto-Regular;
+  font-weight: 400; }
+
+#reservez h1 {
+  font-family: Roboto-Regular;
+  font-size: 150%;
+  text-align: center; }
+#reservez h2 {
+  font-family: Roboto-Thin;
+  font-weight: normal;
+  font-size: 120%;
+  text-align: center; }
+
+#fonct h6, #resto h6 {
+  font-family: Roboto-Regular;
+  font-weight: 900;
+  font-size: 150%;
+  text-align: center; }
+#fonct h3, #fonct h5, #fonct h7, #fonct strong, #resto h3, #resto h5, #resto h7, #resto strong {
+  font-family: Roboto-Regular;
+  font-size: 100%; }
+#fonct p, #resto p {
+  font-family: Roboto-Light;
+  font-size: 100%; }
+
+.pav h4 {
+  font-size: 80%; }
+
+/* déf. zone menu */
+#tete h1 {
+  font-family: Shrikhand-Regular;
+  font-size: 175%; }
+
+#menu h2 {
+  font-family: Roboto-Thin;
+  text-transform: uppercase;
+  font-size: 100%; }
+#menu h3, #menu h4, #menu strong {
+  font-family: Roboto-Regular;
+  font-size: 100%; }
+#menu p {
+  font-family: Roboto-Light;
+  font-size: 84%; }
+
+button {
+  font-family: Roboto-Regular;
+  font-weight: 500; }

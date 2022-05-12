@@ -1,0 +1,25 @@
+/* photo & titre + logo coeur */
+#tete {
+  position: relative;
+  padding-bottom: 24px; }
+  #tete h1 {
+    font-weight: 500;
+    text-align: left; }
+  #tete > div {
+    width: 100%;
+    border-radius: 35px 35px 0px 0px;
+    background-color: #f6f6f6;
+    box-shadow: none;
+    position: absolute;
+    top: 223px;
+    padding: 23px 7% 0% 7%;
+    margin: 0%; }
+
+/* menu ENTREE / PLAT / DESSERT */
+#menu {
+  position: relative; }
+  #menu h2 {
+    width: 11%;
+    padding-top: 24px;
+    margin-left: 7%;
+    border-bottom: 3px solid green; }

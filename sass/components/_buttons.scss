@@ -1,0 +1,143 @@
+
+/* déf. bouton validation */
+
+button{
+	display: block;
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	margin: 39px auto 83px auto;
+	text-align: center;
+	color: white;
+	background: linear-gradient($coul-secondaire,$coul-primaire);
+	border-radius: 25px;
+	border : none;
+	box-shadow: 0px 0px 10px rgb(200, 200, 200);
+	&:hover {
+		filter: brightness(1.06);
+		box-shadow: 0px 0px 10px rgb(133, 133, 133);
+		transform: scale(0.98);
+		transition: 0.3s;
+	}
+}
+
+/* déf. bouton logo coeur animé */
+
+.logo_coeur {
+	position: relative;
+	left: 0px;
+	top: 23px;
+	&--menu {
+		position: absolute;
+		left: inherit;
+		top: 47px;
+		right: 62px;
+	}
+	.fond_coeur {
+		@include pos_coeur;
+		z-index: 0;
+		background: linear-gradient($coul-primaire,$coul-secondaire);
+		clip-path: path('M11,20.865C-10.083,6.68,4.508-4.391,10.758,1.466C10.84,1.542,10.921,1.622,11,1.704c0.079-0.083,0.159-0.162,0.242-0.237C17.491-4.394,32.083,6.679,11,20.865z');
+	}
+	.fond_gris {
+		@include pos_coeur;
+		top: 0px;
+		z-index: 2;
+		background-color: $fond-acceuil;
+	}
+	.fond_gris--gris{
+		background-color: $fond-menu;
+	}
+	&:hover .fond_gris {
+		top: -21px;
+		transition: 1s;
+	}
+	.coucou {
+		@include pos_coeur;
+		z-index: 4;
+	}
+}
+
+/* déf. bouton animé */
+
+.bouton_anim {
+	opacity: 0;
+	animation: app 0.4s ease-in;
+	animation-fill-mode: forwards;
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	height: 70px;
+	margin: 15px auto;
+	padding: 16px 0px 16px 12px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0px 0px 10px rgb(200, 200, 200);
+	line-height: 133%;
+	&--gap_1 {
+		animation-delay: 0.2s;
+	}
+	&--gap_2 {
+		animation-delay: 0.3s;
+	}
+	&--gap_3 {
+		animation-delay: 0.4s;
+	}
+	.contient_logo {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 0;
+		right: -70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0 12px 12px 0;
+		background-color: $coul-tertiaire;
+	}
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+		transition: 0.6s;
+	}
+	&:hover .contient_logo {
+		right: 0px;
+		transition: 0.6s;
+	}
+	&:not(hover) .contient_logo {
+		right: -70px;
+		transition: 0.6s;
+	}
+	&:hover .contient_logo>img {
+		transform: rotate(360deg);
+		right: 0px;
+		transition: 0.6s;
+	}
+	& p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis; /* points de suspension */
+		padding-right: 50px;
+	}
+	&:hover p {
+		padding-right: 120px;
+		transition: 0.6s;
+	}
+
+	&:not(hover) p {
+		right: 50px;
+		transition: 0.6s;
+	}
+	& strong {
+		position: absolute;
+		right: 20px;
+	}
+	&:hover strong {
+		right: 90px;
+		transition: 0.6s;
+	}
+	&:not(hover) strong {
+		right: 20px;
+		transition: 0.6s;
+	}
+}
