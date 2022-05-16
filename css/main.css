@@ -404,8 +404,14 @@ footer {
     line-height: 26px; }
   .fonct_select p {
     font-weight: 400; }
-  .fonct_select--select {
+  .fonct_select .coul_cp {
+    display: none; }
+  .fonct_select:hover {
     background-color: #f5edff; }
+  .fonct_select:hover .coul_cp {
+    display: block; }
+  .fonct_select:hover .coul_g {
+    display: none; }
 
 /* sélection restaurants */
 #resto {
